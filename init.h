@@ -46,7 +46,7 @@ static const char default_script_name[] = "build-rpm.py";
 static const char default_run_as_user[] = "omv";
 static const char default_run_as_group[] = "mock";
 
-static const char clone_cmd[] = "cd %s; sudo rm -rf %s; sudo git clone -b %s %s %s";
+static const char clone_cmd[] = "cd %s; sudo rm -rf %s; sudo git clone --depth=1 -b %s %s %s";
 
 int init(char *config_path);
 static int get_query_string(config_t *config);
